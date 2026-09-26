@@ -1,0 +1,25 @@
+GIMP REFORK - CHANGELOG
+========================
+
+[0.1.0] — 2026-09-09
+
+AÑADIDO:
+- Proyecto de refork de GIMP con interfaz moderna estilo Adobe para facilitar transición desde Photoshop.
+- Instalación completa de MSYS2 en entorno MINGW64.
+- Actualización completa del sistema base MSYS2 (pacman -Syu x2).
+- Verificación de espacio en disco y reubicación a D: por falta de espacio en C:.
+- Limpieza de carpeta original en C:\Users\nicol\Documents\ClaudeCode\Gimp Refork.
+- Documentación de estado del proyecto (PROJECT_STATUS.md).
+
+BLOQUEO ACTUAL:
+- Dependencias centrales de GIMP (mingw-w64-x86_64-gegl, mingw-w64-x86_64-babl) no disponibles como binarios precompilados en repositorios actuales de MSYS2.
+- Se requiere compilar BABL y GEGL desde el fuente antes de poder compilar GIMP.
+
+OPCIONES PARA RETOMAR:
+- Opción A: Compilar BABL → GEGL → GIMP desde el fuente con meson/ninja.
+- Opción B: Usar scripts oficiales de cross-compilation de GIMP en build/windows/.
+- Opción C: Prototipo UI web estilo Adobe como alternativa inmediata (HTML/CSS/JS, convertible a Electron).
+
+NOTAS:
+- msys2-installer.exe (~83 MB) conservado como backup.
+- Sin funcionalidades de GIMP compiladas aún.
